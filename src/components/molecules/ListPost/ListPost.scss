@@ -4,5 +4,18 @@ $widthList: 300px;
     display: flex;
     flex-wrap: wrap;
 
-    
+    li {
+        width: $widthList;
+
+        .button-list__post {
+            width: $widthList;
+            overflow: hidden;
+            
+            .title__post {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
 }
