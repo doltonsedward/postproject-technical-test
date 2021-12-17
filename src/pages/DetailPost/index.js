@@ -1,3 +1,4 @@
+import './DetailPost.scss'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
@@ -26,7 +27,7 @@ const DetailPost = () => {
         getDetailPost()
     }, [])
     return (
-        <Card sx={{ maxWidth: 250 }}>
+        <Card className="card-container">
             <CardContent>
                 <Typography>{post.title}</Typography>
                 <Typography color="text.secondary">{post.body}</Typography>
